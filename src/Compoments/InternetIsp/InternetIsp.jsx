@@ -4,7 +4,10 @@ import './InternetIsp.css';
 function InternetIsp() {
   return (
     <div>
-      <h1>Internet Isp Page</h1>
+
+<div class="cardi">
+    <h2>Residential</h2>
+</div>
     </div>
   )
 }
