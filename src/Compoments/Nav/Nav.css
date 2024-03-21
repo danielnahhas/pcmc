@@ -1,20 +1,67 @@
-.Navigation {
+/* Nav.css */
 
-    height: 8vh;
+.Navigation {
+    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
+
 .nav {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    margin: 10px;
     font-size: large;
+    padding: 15px; /* Adjusted padding */
+    transition: color 0.2s;
+    margin: 15px; /* Adjusted margin */
 }
-.nav:hover{
+
+.nav:hover {
     color: red;
     border-bottom: 1px solid red;
     transform: translateY(-1px);
-    transition: 0.2s;
+}
+
+.logo {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Dropdown styles remain the same */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
