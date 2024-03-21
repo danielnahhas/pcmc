@@ -3,6 +3,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from './Compoments/Header/Header';
 import Nav from './Compoments/Nav/Nav';
 import HomePage from './Compoments/HomePage/HomePage';
+import WebDevlopment from './Compoments/WebDevelopment/WebDevelopment';
+import InternetIsp from './Compoments/InternetIsp/InternetIsp';
+import InternetDsl from './Compoments/InternetDsl/InternetDsl';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/web-development' element={<WebDevlopment/>} />
+        <Route path='/internet-isp' element={<InternetIsp/>} />
+        <Route path='/internet-dsl' element={<InternetDsl/>} />
       </Routes>
      </BrowserRouter>
     </div>
