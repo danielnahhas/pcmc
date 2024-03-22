@@ -6,6 +6,7 @@ import HomePage from './Compoments/HomePage/HomePage';
 import WebDevlopment from './Compoments/WebDevelopment/WebDevelopment';
 import InternetIsp from './Compoments/InternetIsp/InternetIsp';
 import InternetDsl from './Compoments/InternetDsl/InternetDsl';
+import Footer from './Compoments/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/internet-isp' element={<InternetIsp/>} />
         <Route path='/internet-dsl' element={<InternetDsl/>} />
       </Routes>
+      <Footer/>
      </BrowserRouter>
     </div>
   );

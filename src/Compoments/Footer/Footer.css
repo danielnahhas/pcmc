@@ -1,0 +1,22 @@
+.foot-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .foot-body {
+    margin-top: auto; /* Push the footer body to the bottom */
+    background: rgb(255, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10%;
+    border-top: 1px solid black;
+    padding: 20px; /* Add padding for better readability */
+  }
+  
+  .foot-body a {
+    text-decoration: none;
+    font-weight: 600;
+    color: blue;
+  }
+  
