@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,6 +7,12 @@ import "./HomePage.css";
 import { Link } from "react-router-dom";
 
 function HomePage() {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    // Trigger animation after component mounts
+    setAnimate(true);
+  }, []);
   const settings = {
     dots: true,
     infinite: true,
@@ -18,7 +24,7 @@ function HomePage() {
   };
 
   return (
-    <div className="body">
+    <div className={`body ${animate ? 'slide-in' : ''}`}>
       <div className="slider-container">
         <div className="slider-wrapper">
           <Slider {...settings}>

@@ -1,0 +1,70 @@
+.web-body {
+    max-width: calc(100% - 40px); /* Adjusted max-width to remove white space */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4; /* Light gray background color */
+    font-family: 'Arial', sans-serif; /* Example font family */
+  }
+  
+  .intro {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .capabilities {
+    margin-bottom: 40px;
+  }
+  
+  .capabilities ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .capabilities ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .price-card {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .price-bg {
+    background-color: #fff; /* White background color */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+  
+  .price-bg p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #940000; /* Adjust color as needed */
+  }
+  /* Existing CSS styles */
+
+.contact-info {
+    margin-top: 40px;
+  }
+  
+  .contact-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Adjust color as needed */
+    text-decoration: none;
+  }
+  /* Previous CSS styles */
+
+.web-body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .web-body.animate-in {
+    opacity: 1;
+  }
+  

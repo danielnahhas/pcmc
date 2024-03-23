@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./InternetIsp.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 function InternetIsp() {
+  const [animate, setAnimate] = useState(false);
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
   return (
-    <div className="int-body">
+    <div className={`int-body ${animate ? 'animate-in' : ''}`}>
       <div className="cardi">
         <h2>BUNDLES</h2>
         <ul>
@@ -44,25 +50,29 @@ function InternetIsp() {
         <div className="upgrade-card">
           <h3>UPGRADES</h3>
           <div className="upgrade-option">
-            <div className="upgrade-option">
-              <div className="cardi">
-                <h2>Gaming</h2>
-                <div className="price-container">
-                  <span className="price">$15</span>
-                  <span className="price-sign">/MO</span>
-                </div>
+            <div className="cardi">
+              <h2>Gaming</h2>
+              <div className="price-container">
+                <span className="price">$15</span>
+                <span className="price-sign">/MO</span>
               </div>
-              <div className="cardi">
-                <h2>Real IP</h2>
-                <div className="price-container">
-                  <span className="price">$25</span>
-                  <span className="price-sign">/MO</span>
-                </div>
+            </div>
+            <div className="cardi">
+              <h2>Real IP</h2>
+              <div className="price-container">
+                <span className="price">$25</span>
+                <span className="price-sign">/MO</span>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div className="contact-info">
+          <p>For inquiries, contact us at:</p>
+          <a href="https://wa.me/+9613898007" target="_blank" rel="noreferrer" className="contact-number">
+            <FontAwesomeIcon icon={faPhone} /> +961 3 898 007
+          </a>
+        </div>
     </div>
   );
 }
