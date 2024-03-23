@@ -1,22 +1,56 @@
 .foot-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .foot-body {
-    margin-top: auto; /* Push the footer body to the bottom */
-    background: rgb(255, 238, 238);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10%;
-    border-top: 1px solid black;
-    padding: 20px; /* Add padding for better readability */
-  }
-  
-  .foot-body a {
-    text-decoration: none;
-    font-weight: 600;
-    color: blue;
-  }
-  
+  display: flex;
+  flex-direction: column;
+}
+
+.foot-body {
+  background: rgb(255, 238, 238);
+  border-top: 1px solid black;
+  padding: 20px; /* Add padding for better readability */
+}
+
+.location-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-content {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.location-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.location-details h2 {
+  margin-bottom: 5px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-item {
+  margin: 0 30px;
+  text-align: center;
+}
+
+.contact-item h2 {
+  margin-bottom: 5px;
+}
+
+.foot-body a {
+  text-decoration: none;
+  font-weight: 600;
+  color: blue;
+}

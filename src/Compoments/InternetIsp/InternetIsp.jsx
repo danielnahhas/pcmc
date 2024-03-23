@@ -42,7 +42,7 @@ function InternetIsp() {
 
       <div className="additional-content">
         <div className="upgrade-card">
-          <h3>Upgrades</h3>
+          <h3>UPGRADES</h3>
           <div className="upgrade-option">
             <div className="upgrade-option">
               <div className="cardi">
