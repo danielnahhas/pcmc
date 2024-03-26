@@ -17,6 +17,7 @@ function Nav() {
           <Link to={"/web-development"}>Web Development</Link>
           <Link to={"/internet-isp"}>Internet (ISP)</Link>
           <Link to={"/internet-dsl"}>Internet (DSL)</Link>
+          <Link to={"/4g-internet"}>4G Internet</Link>
         </div>
       </div>
 
