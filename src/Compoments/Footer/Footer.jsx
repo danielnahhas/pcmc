@@ -3,7 +3,7 @@ import "./Footer.css";
 
 // Importing Font Awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faMapMarkerAlt, faEnvelope  } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
@@ -53,13 +53,23 @@ function Footer() {
             </a>
           </div>
           <div className="contact-item">
-            <h2>Internet (DSL)</h2>
+            <h2>Internet (DSL & 4G)</h2>
             <a
               href="https://wa.me/+9613602789"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faPhone} /> +961 3 602 789
+            </a>
+          </div>
+          <div className="contact-item">
+            <h2>Email</h2>
+            <a
+              href="mailto:pcmc.nahhas@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faEnvelope } /> pcmc.nahhas@gmail.com
             </a>
           </div>
         </div>
