@@ -1,10 +1,17 @@
-import React from "react";
-import "./Internet4G";
+import React, { useEffect, useState } from "react";
+import "./Internet4G.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 function Internet4G() {
+  const [animate, setAnimate] = useState(false);
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
   return (
-    <div>
-        <div>
+    <>
+
+    <div className={`fourBody ${animate ? 'animate-in' : ''}`}>
         <h1>4G Internet</h1>
       <p>
         {" "}
@@ -14,8 +21,10 @@ function Internet4G() {
       </p>
         </div>
      
-      <div className="cardi">
-        <h2>Plan</h2>
+    
+    <div className={`int-bodys ${animate ? 'animate-in' : ''}`}>
+    <div className="cardis">
+        <h2>Plans</h2>
         <ul>
           <li>
             <span className="left-content">25GB</span>
@@ -36,7 +45,18 @@ function Internet4G() {
         
         </ul>
       </div>
+      
+        
     </div>
+ 
+    <div className="contact-infos">
+        <p>For inquiries, contact us at:</p>
+        <a href="https://wa.me/+9613602789" target="_blank" rel="noreferrer" className="contact-number">
+          <FontAwesomeIcon icon={faPhone} /> +961 3 602 789
+        </a>
+      </div>
+    </>
+    
   );
 }
 

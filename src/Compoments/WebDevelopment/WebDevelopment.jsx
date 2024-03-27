@@ -14,7 +14,7 @@ function WebDevelopment() {
       <p className="intro">
         Your website isn't just a URL. It’s an essential component of your
         marketing and business strategy. It’s an extension of your brand and a
-        virtual experience for your consumers. When you’re choosing a site
+        virtual experience for your consumers. When you’re choosing a website
         developer, you need someone you can trust to execute every aspect to the
         highest level of quality. Don’t worry: no matter your company, product,
         or customers, we curate a multi-platform, omnichannel experience
@@ -38,7 +38,7 @@ function WebDevelopment() {
       </div>
 
       <div className="contact-info">
-        <p>For inquiries, contact us at:</p>
+        <p>For More Info, Contact Us At:</p>
         <a href="https://wa.me/+96171038008" target="_blank" rel="noreferrer" className="contact-number">
   <FontAwesomeIcon icon={faPhone} /> +961 71 038 008
 </a>

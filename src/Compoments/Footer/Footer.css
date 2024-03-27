@@ -1,3 +1,6 @@
+/* Footer.css */
+
+/* Common styles */
 .foot-container {
   display: flex;
   flex-direction: column;
@@ -38,11 +41,13 @@
 .contact-section {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .contact-item {
-  margin: 0 30px;
+  margin: 0 10px; /* Reduce margin for smaller screens */
   text-align: center;
+  flex: 1; /* Make each item occupy equal space */
 }
 
 .contact-item h2 {

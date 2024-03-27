@@ -68,7 +68,7 @@ function InternetIsp() {
         </div>
       </div>
       <div className="contact-info">
-          <p>For inquiries, contact us at:</p>
+          <p>For More Info, Contact Us At:</p>
           <a href="https://wa.me/+9613898007" target="_blank" rel="noreferrer" className="contact-number">
             <FontAwesomeIcon icon={faPhone} /> +961 3 898 007
           </a>

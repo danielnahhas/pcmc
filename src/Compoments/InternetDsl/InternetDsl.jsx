@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./InternetDsl.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 function InternetDsl() {
+  const [animate, setAnimate] = useState(false);
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
   return (
-    <div className="dsl-body">
-      <div className="cardi">
+    <>
+    <div className={`int-bodyd ${animate ? 'animate-in' : ''}`}>
+      <div className="cardid">
         <h2>lebanese Army</h2>
         <ul>
           <li>
@@ -27,7 +32,7 @@ function InternetDsl() {
           </li>
         </ul>
       </div>
-      <div className="cardi">
+      <div className="cardid">
         <h2>Plan 1</h2>
         <ul>
           <li>
@@ -56,7 +61,7 @@ function InternetDsl() {
           </li>
         </ul>
       </div>
-      <div className="cardi">
+      <div className="cardid">
         <h2>Plan 2</h2>
         <ul>
           <li>
@@ -87,7 +92,7 @@ function InternetDsl() {
          
         </ul>
       </div>
-      <div className="cardi">
+      <div className="cardid">
         <h2>Plan 3</h2>
         <ul>
          
@@ -121,6 +126,14 @@ function InternetDsl() {
       </div>
         
     </div>
+ 
+    <div className="contact-infos">
+        <p>For inquiries, contact us at:</p>
+        <a href="https://wa.me/+9613602789" target="_blank" rel="noreferrer" className="contact-number">
+          <FontAwesomeIcon icon={faPhone} /> +961 3 602 789
+        </a>
+      </div>
+    </>
   );
 }
 

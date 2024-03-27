@@ -133,3 +133,28 @@ button:active {
     transform: translateY(0);
   }
 }
+/* Add this to your CSS */
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .slider-wrapper {
+    width: 90%; /* Reduce the width of the slider wrapper */
+  }
+
+  .card {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    gap: 20px; /* Increase the gap between cards */
+  }
+
+  .card-inner {
+    width: 100%; /* Make card-inner take full width */
+    height: auto; /* Auto height for card-inner */
+  }
+}
+
+/* Adjustments for even smaller screens */
+@media screen and (max-width: 480px) {
+  .slider-wrapper {
+    width: 100%; /* Make the slider wrapper take full width */
+  }
+}

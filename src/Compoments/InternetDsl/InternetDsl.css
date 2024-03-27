@@ -1,15 +1,93 @@
-.dsl-body {
+/* InternetDsl.css */
+
+/* Common styles */
+.int-bodyd {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8%;
+    gap: 20px;
     margin-top: 20px;
-    width:100%;
-    height: 75.6vh;
+    padding: 20px;
     background: rgb(228, 228, 228);
-}
-.cardi {
-    height: auto;
-    margin: 10px;
-    padding: 9px;
-}
+    flex-wrap: wrap; /* Allow flex items to wrap to the next row */
+  }
+  
+  .cardid {
+    width: 270px;
+    height: 320px;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .cardid ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cardid li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cardid li .left-content {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .cardid li .price {
+    flex-shrink: 0;
+    width: 80px;
+    text-align: right;
+    font-size: 18px;
+    color: red;
+  }
+  
+  .cardid span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .cardid h2 {
+    font-size: 25px;
+    color: rgb(119, 0, 0);
+  }
+  
+  .contact-infos {
+    width: auto;
+    background: rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .contact-infos p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+  }
+  
+  .contact-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Animation */
+  .int-bodyd {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .int-bodyd.animate-in {
+    opacity: 1;
+  }
+  

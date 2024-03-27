@@ -1,0 +1,97 @@
+.fourBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgb(228, 228, 228);
+    color: #333;
+    margin-top: 10px;
+}
+.fourBody p {
+    font-size: large;
+    font-weight: 600;
+}
+.int-bodys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    width:100%;
+    height: 75.6vh;
+    background: rgb(228, 228, 228);
+  }
+ 
+  .cardis {
+    width: 270px;
+    height: 320px;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cardis ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cardis li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Adjust this value as needed */
+    color: red;
+  }
+  
+  .cardis li .left-content {
+    flex-grow: 1; /* Take up remaining space */
+  }
+  
+  .cardis span{
+    font-size: 17px;
+    font-weight: 600;
+  }
+  
+  .cardis h2 {
+    font-size: 25px;
+    color: rgb(119, 0, 0);
+  }
+ 
+.contact-infos {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: rgb(228, 228, 228);
+}
+.contact-infos p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.int-bodys {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.int-bodys.animate-in {
+  opacity: 1;
+}
+.fourBody{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.fourBody.animate-in {
+    opacity: 1;
+}

@@ -47,8 +47,11 @@
   }
   /* Existing CSS styles */
 
-.contact-info {
+.contact-info p {
     margin-top: 40px;
+    color: #333;
+    font-size: large;
+    font-weight: 400;
   }
   
   .contact-number {
