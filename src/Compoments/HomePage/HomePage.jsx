@@ -11,7 +11,6 @@ function HomePage() {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    // Trigger animation after component mounts
     setAnimate(true);
   }, []);
   const settings = {
@@ -39,7 +38,7 @@ function HomePage() {
             </div>
             <div className="content">
               <img className="web" src="/Assets/fiber.jpg" alt="Slide 2" />
-              <h2>Fiber Optics</h2>
+              <h2>Fiber Optic</h2>
               <p>
                 Connection that can reach speeds of up to 940 Megabits per
                 second
