@@ -46,7 +46,9 @@
     color: #940000; /* Adjust color as needed */
   }
   /* Existing CSS styles */
-
+.contact-infow {
+  margin-top: 20px;
+}
 .contact-info p {
     margin-top: 40px;
     color: #333;

@@ -37,7 +37,7 @@ function WebDevelopment() {
         </div>
       </div>
 
-      <div className="contact-info">
+      <div className="contact-infow">
         <p>For More Info, Contact Us At:</p>
         <a href="https://wa.me/+96171038008" target="_blank" rel="noreferrer" className="contact-number">
   <FontAwesomeIcon icon={faPhone} /> +961 71 038 008

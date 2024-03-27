@@ -21,6 +21,7 @@ function App() {
         <Route path='/internet-isp' element={<InternetIsp/>} />
         <Route path='/internet-dsl' element={<InternetDsl/>} />
         <Route path='/4g-internet' element={<Internet4G />} />
+    
       </Routes>
       <Footer/>
      </BrowserRouter>

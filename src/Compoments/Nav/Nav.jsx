@@ -47,9 +47,6 @@ function Nav() {
             <button><Link to={"/4g-internet"}>4G Internet</Link></button>
           </div>
         </div>
-        <Link className='nav' to={"/shop"}>Shop</Link>
-        <Link className='nav' to={"/about-us"}>About Us</Link>
-        <Link className='nav' to={"/contact-us"}>Contact Us</Link>
       </div>
       <div className='icon' onClick={toggleMenu}>
         <div className={`bar ${isOpen ? 'animate' : ''}`}></div>

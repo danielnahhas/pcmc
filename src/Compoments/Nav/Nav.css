@@ -1,6 +1,6 @@
 .Navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
     background-color: #fff;
@@ -92,6 +92,9 @@
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
+    .Navigation{
+        justify-content: space-between;
+    }
   .nav-links {
     display: none;
     flex-direction: column;
