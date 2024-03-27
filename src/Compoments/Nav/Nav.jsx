@@ -38,6 +38,7 @@ function Nav() {
         </Link>
       </div>
       <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+      <Link className='nav' to={"/"}>Home</Link>
         <div className="dropdown" onClick={toggleDropdown}>
           <button className={`dropbtn ${isDropdownOpen ? 'active' : ''}`}>Plans &#9656;</button>
           <div className={`dropdown-content ${isDropdownOpen ? 'show' : ''}`}>
@@ -47,7 +48,7 @@ function Nav() {
             <button><Link to={"/4g-internet"}>4G Internet</Link></button>
           </div>
         </div>
-        <Link className='nav' to={"/"}>Home</Link>
+        
       </div>
       <div className='icon' onClick={toggleMenu}>
         <div className={`bar ${isOpen ? 'animate' : ''}`}></div>

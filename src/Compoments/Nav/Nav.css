@@ -103,7 +103,7 @@
     right: 10px;
     background-color: #fff;
     border: 1px solid #ccc;
-    max-width: 400px;
+    width: 170px;
     z-index: 1;
     line-height: 40px;
   }
@@ -112,8 +112,8 @@
     display: flex;
   }
   .nav {
-    width: auto;
-    border-top: 1px solid black;
+    width: 140px;
+    border-bottom: 1px solid black;
   }
 
   .nav:hover {

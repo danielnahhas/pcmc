@@ -6,7 +6,6 @@ import HomePage from './Compoments/HomePage/HomePage';
 import WebDevlopment from './Compoments/WebDevelopment/WebDevelopment';
 import InternetIsp from './Compoments/InternetIsp/InternetIsp';
 import InternetDsl from './Compoments/InternetDsl/InternetDsl';
-import Footer from './Compoments/Footer/Footer';
 import Internet4G from './Compoments/Internet4G/Internet4G';
 
 function App() {
