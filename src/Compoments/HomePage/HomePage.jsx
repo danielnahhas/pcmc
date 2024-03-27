@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import webdev from "./web.svg";
 import "./HomePage.css";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 function HomePage() {
   const [animate, setAnimate] = useState(false);
@@ -168,6 +169,7 @@ function HomePage() {
           </Link>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

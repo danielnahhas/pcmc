@@ -23,7 +23,7 @@ function App() {
         <Route path='/4g-internet' element={<Internet4G />} />
     
       </Routes>
-      <Footer/>
+   
      </BrowserRouter>
     </div>
   );
