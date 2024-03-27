@@ -32,10 +32,15 @@
 .location-icon {
   font-size: 24px;
   margin-right: 10px;
+  color: black;
 }
 
 .location-details h2 {
   margin-bottom: 5px;
+  color: black;
+}
+.location-details {
+  color: black;
 }
 
 .contact-section {
