@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import './Nav.css';
+import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import "./Nav.css";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +15,9 @@ function Nav() {
       }
     }
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -25,35 +25,49 @@ function Nav() {
     setIsOpen(!isOpen);
     setIsDropdownOpen(false);
   };
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (
-    <nav className='Navigation' ref={menuRef}>
+    <nav className="Navigation" ref={menuRef}>
       <div>
         <Link to={"/"}>
-          <img className='logo' src="/Assets/pcmc.png" alt="asd" />
+          <img className="logo" src="/Assets/pcmc.png" alt="asd" />
         </Link>
       </div>
-      <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-      <Link className='nav' to={"/"}>Home</Link>
+      <div className={`nav-links ${isOpen ? "open" : ""}`}>
+        <Link className="nav" to={"/"} onClick={handleLinkClick}>
+          Home
+        </Link>
         <div className="dropdown" onClick={toggleDropdown}>
-          <button className={`dropbtn ${isDropdownOpen ? 'active' : ''}`}>Plans &#9656;</button>
-          <div className={`dropdown-content ${isDropdownOpen ? 'show' : ''}`}>
-            <button><Link to={"/web-development"}>Web Development</Link></button>
-            <button><Link to={"/internet-isp"}>Internet (ISP)</Link></button>
-            <button><Link to={"/internet-dsl"}>Internet (DSL)</Link></button>
-            <button><Link to={"/4g-internet"}>4G Internet</Link></button>
+          <button className={`dropbtn ${isDropdownOpen ? "active" : ""}`}>
+            Plans &#9656;
+          </button>
+          <div className={`dropdown-content ${isDropdownOpen ? "show" : ""}`}>
+            <button>
+              <Link to={"/web-development"} onClick={handleLinkClick}>Web Development</Link>
+            </button>
+            <button>
+              <Link to={"/internet-isp"} onClick={handleLinkClick}>Internet (ISP)</Link>
+            </button>
+            <button>
+              <Link to={"/internet-dsl"} onClick={handleLinkClick}>Internet (DSL)</Link>
+            </button>
+            <button>
+              <Link to={"/4g-internet"} onClick={handleLinkClick}>4G Internet</Link>
+            </button>
           </div>
         </div>
-        
       </div>
-      <div className='icon' onClick={toggleMenu}>
-        <div className={`bar ${isOpen ? 'animate' : ''}`}></div>
-        <div className={`bar ${isOpen ? 'animate' : ''}`}></div>
-        <div className={`bar ${isOpen ? 'animate' : ''}`}></div>
+      <div className="icon" onClick={toggleMenu}>
+        <div className={`bar ${isOpen ? "animate" : ""}`}></div>
+        <div className={`bar ${isOpen ? "animate" : ""}`}></div>
+        <div className={`bar ${isOpen ? "animate" : ""}`}></div>
       </div>
     </nav>
   );
