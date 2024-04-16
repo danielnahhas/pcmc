@@ -16,7 +16,9 @@ function WebDevelopment() {
         marketing and business strategy. It’s an extension of your brand and a
         virtual experience for your consumers. When you’re choosing a website
         developer, you need someone you can trust to execute every aspect to the
-        highest level of quality. Don’t worry: no matter your company, product,
+        highest level of quality. 
+        <br/>
+        Don’t worry: no matter your company, product,
         or customers, we curate a multi-platform, omnichannel experience
         seamlessly.
       </p>
